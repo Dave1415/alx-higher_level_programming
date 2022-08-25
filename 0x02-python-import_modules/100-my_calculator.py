@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from sys import arg
+from sys import argv
 from calculator_1 import add, sub, mul, div
 def main():
     if len(argv) != 4:
