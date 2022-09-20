@@ -1,9 +1,17 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
+
 """
-    Created class Rectangle
+
+Created class Rectangle
+
 """
+
+
+
 
 
 class Rectangle:
-    """Reactangle Class"""
+
+    """ Rectangle Class"""
+
     pass
