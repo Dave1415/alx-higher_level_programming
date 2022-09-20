@@ -1,9 +1,9 @@
-#!/usr/bin/python3
-class rectangle
-
+#!/usr/bin/bash
+"""
+    Module contains of a single class
 """
 
 
 class Rectangle:
-    """ class type rectangle"""
+    """Defines a reactangle"""
     pass
