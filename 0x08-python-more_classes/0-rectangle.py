@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 """
-    Module contains of a single class
+    Created class Rectangle
 """
 
 
 class Rectangle:
-    """Defines a reactangle"""
+    """Reactangle Class"""
     pass
