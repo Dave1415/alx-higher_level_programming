@@ -1,26 +1,30 @@
 #!/usr/bin/python3
 """
-    Contains a single function that handles text indenting
+text_indentation module
+Function that print a text with new lines after using '.?:'
 """
 
 
 def text_indentation(text):
-    """
-        prints a text with 2 new lines after each
-        of these characters: ., ? and :
+    """Return text with 2 new lines after using '.?:'
+    Args:
+    param1: type str the text
+    Raise: TypeError
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    begin = 0
-    delimeters = [".", "?", ":"]
-    for c in text:
-        if c.isspace() and begin == 0:
+    i = 0
+    while i < len(text) and text[i] == ' ':
+        i += 1
+
+    while i < len(text):
+        print(text[i], end='')
+        if text[i] == '\n' or text[i] in ".?:":
+            if text[i] in ".?:":
+                print('\n')
+            i += 1
+            while i < len(text) and text[i] == ' ':
+                i += 1
             continue
-        elif c in delimeters:
-            print("{}\n\n".format(c), end="")
-            begin = 0
-            continue
-        else:
-            print("{}".format(c), end="")
-            begin += 1
+        i += 1
