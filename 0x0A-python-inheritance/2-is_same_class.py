@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Module 2-is_same_class.
 Finds if an object is exactly an instance of a class.
 """
