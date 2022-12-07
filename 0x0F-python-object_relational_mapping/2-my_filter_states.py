@@ -11,4 +11,3 @@ if __name__ == '__main__':
     cur.execute("SELECT * FROM states WHERE BINARY name = '{}'"
                 .format(sys.argv[4]))
     [print(state) for state in cur.fetchall()]
-
